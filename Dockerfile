@@ -23,4 +23,4 @@ RUN	echo "${TIMEZONE}" > /etc/timezone && \
 EXPOSE 1025 1080
 
 # Command
-ENTRYPOINT ["mailcatcher", "--foreground"]
+ENTRYPOINT ["mailcatcher", "--foreground", "--ip=0.0.0.0"]
